@@ -1,7 +1,7 @@
 # SpringSecurityJwt
 
 ## Description
-The **SpringSecurityJwt** is a project that show how implement JWT using Spring Security.
+Project that show how implement JWT using Spring Security.
 
 ## Technologies
 The project use the following technologies:

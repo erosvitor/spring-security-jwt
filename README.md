@@ -94,5 +94,7 @@ curl \
 ```
 
 ## Release History
+* 1.0.1 (2021-08-03)
+    * Spring Boot updated to 2.5.3
 * 1.0.0 (2021-05-16)
     * First version

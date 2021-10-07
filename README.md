@@ -1,22 +1,30 @@
-# SpringSecurityJwt
-
-## Description
-Project that show how implement JWT using Spring Security.
+## About
+The project shows how to implement JWT using Spring Security.
 
 ## Technologies
-The project use the following technologies:
+The following tools were used in this project:
 
-* Java 11
-* Apache Maven
-* Spring Boot
-* Spring Security
-* MySQL Server
-* Spring Data JPA
-* IDE Eclipse
+* [Java Oracle](https://www.oracle.com/java/)
+* [Apache Maven](https://maven.apache.org/)
+* [MySQL Server](https://www.mysql.com/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring Security](https://spring.io/projects/spring-security)
+* [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+* [IDE Eclipse](https://www.eclipse.org/)
 
-## Database
-A demo database must be created by following SQL script.
+## Requirements
+Before starting this project you need to have Git, JDK Oracle, Maven, MySQL Server and Eclipse IDE installed.
 
+## Starting the project
+
+### Clonning the project
+```
+$ git clone https://github.com/erosvitor/spring-security-jwt.git
+
+$ cd spring-security-jwt
+```
+
+### Creating the database
 ```
 CREATE DATABASE springsecurityjwt DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
 
@@ -59,11 +67,10 @@ VALUES ('admin', 'Administrator', '$2a$16$9qr2tv0HmXbHBsx.TZFjfux742wCZM32a8Wi6i
 INSERT INTO `user_permission` (`id_user`, `id_permission`) VALUES (1, 1), (2, 1), (1, 2);
 ```
 
-## Testing the project
-**Step 1:** Start the application
+### Testing the project
+**Step 1:** Start the application using Eclipse IDE or by Maven command line
 
-**Step 2:** Login in the application 
-
+**Step 2:** Login in the application with the user 'admin' using the following command
 ```
 curl \
 --location --request POST 'http://localhost:8080/auth/signin' \
@@ -92,6 +99,8 @@ curl \
 --location --request GET 'http://localhost:8080/hello' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGhvcml0aWVzIjpbeyJhdXRob3JpdHkiOiJST0xFX01BTkFHRVIifSx7ImF1dGhvcml0eSI6IlJPTEVfQURNSU4ifV0sImlhdCI6MTYyMTE3Mjk3MiwiZXhwIjoxNjIxMTc2NTcyfQ.Mfl8MepvEqw5Mod6YVho8cIdo7ZiI3_3sdhxN-DQ3S8'
 ```
+## License
+This project is under license from MIT. For more details, see the LICENSE file.
 
 ## Release History
 * 1.0.1 (2021-08-03)
